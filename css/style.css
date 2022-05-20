@@ -278,7 +278,7 @@ nav .home-shop, a:nth-child(4):hover~.animation{
 
 /*IMMAGINE DI SFONDO*/
 .wallp{
-	background-image: url(../img/logo.png);
+	background-image: url(../img/logo.PNG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
