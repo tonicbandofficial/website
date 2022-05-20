@@ -1,0 +1,908 @@
+/*FORMATTAZIOI BASE*/
+h1{
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+}
+
+h2, h4{
+	text-align: center;
+	font-family: 'Koulen', cursive;
+}
+
+h3{
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	margin: 20px auto;
+	line-height: 25px;
+}
+
+h5{
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+}
+
+p{
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+}
+
+body{
+	font-family: "Roboto", sans-serif;
+	overflow-x: hidden;
+}
+
+nav{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: auto;
+	width: 562px;
+	height: 50px;
+	border-radius: 8px;
+	font-size: 0;
+	box-shadow: 0 2px 3px rgba(0,0,0,.1);
+	border: 1px solid;
+}
+
+nav a{
+	font-size: 17px;
+	text-transform: uppercase;
+	color: black;
+	text-decoration: none;
+	line-height: 50px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+
+/*FORMATTAZIONE HOMEPAGE*/
+/*Menu dinamico Homepage*/
+.showcase{
+	min-height: 100vh;
+	padding: 100px;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	font-family: "Roboto", sans-serif;
+	z-index: 2;
+}
+
+.showcase header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 70px 100px;
+	z-index: 1000;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.showcase video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.whitelink{
+	color: white;
+}
+
+.whitelink:hover {
+	text-decoration: none; 
+	color: #ffff00;
+}
+
+/*spazio tra ogni elemento del menu + cursore che si muove tra una voce del menu e l'altra*/
+nav .animation{
+	position: absolute;
+	height: 10%;
+	bottom: 10;
+	z-index: 0;
+	background-color: black;
+	border-radius: 5px;
+	transition: all .5s ease 0s;
+}
+
+a:nth-child(1){
+	width: 140px;
+}
+
+nav .home-band, a:nth-child(1):hover~.animation{
+	width: 140px;
+	left: 0;
+}
+
+a:nth-child(2){
+	width: 140px;
+}
+
+nav .home-canzoni, a:nth-child(2):hover~.animation{
+	width: 140px;
+	left: 140px;
+}
+
+a:nth-child(3){
+	width: 140px;
+}
+
+nav .home-concerti, a:nth-child(3):hover~.animation{
+	width: 140px;
+	left: 280px;
+}
+
+a:nth-child(4){
+	width: 140px;
+}
+
+nav .home-shop, a:nth-child(4):hover~.animation{
+	width: 140px;
+	left: 420px;
+}
+
+.card-title{
+	text-align: center;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: bolder;
+}
+
+.card-text{
+	text-align: center;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.card-autor{
+	text-align: center;
+	font-family: 'Roboto Mono', monospace;
+	font-style: italic;
+}
+
+/* FORMATTAZIONE NOME BAND + SLOGAN*/
+.title-cont{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.title-cont h1{
+	font-family: "Roboto", sans-serif;
+	color: white;
+    margin-top: 50px;
+}
+
+.titlechang:before{
+	content: 'Hai bisogno di compagnia?';
+	font-size: 20px;
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+	color: white;
+	animation-name: titlechange;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-timinig-function: ease;
+}
+
+@keyframes titlechange{
+	0%{content: 'Hai bisogno di compagnia?'; opacity:0.5;}
+	10%{content: 'Hai bisogno di compagnia?'; opacity:1;}
+	20%{content: 'Hai bisogno di compagnia?'; opacity:0;}
+	29%{content: 'Hai bisogno di compagnia?'; opacity:0;}
+	30%{content: 'Facci uno squillo.'; opacity:0;}
+	40%{content: 'Facci uno squillo.'; opacity:1}
+	50%{content: 'Facci uno squillo.'; opacity:0;}
+	59%{content: 'Facci uno squillo.'; opacity:0;}
+	60%{content: 'Ti rispondiamo con la nostra musica!'; opacity:0;}
+	70%{content: 'Ti rispondiamo con la nostra musica!'; opacity:1;}
+	80%{content: 'Ti rispondiamo con la nostra musica!'; opacity:0;}
+	90%{content: 'Ti rispondiamo con la nostra musica!'; opacity:0;}
+	99%{content: 'Ti rispondiamo con la nostra musica!'; opacity:0;}
+	100%{content: 'Hai bisogno di compagnia?'; opacity:0;}
+}
+
+.title-h{
+	color: black;
+}
+
+.title-h:hover{
+	color: #ffff00;;
+	text-decoration: none;
+}
+
+#concerti {
+	max-width: 100%;
+	padding-right: 5px;
+	transition: filter 0.5s;
+}
+
+#concerti:hover {
+	filter: blur(2px);
+}
+
+#song{
+	transition: transform .5s;
+}
+
+#song:hover{
+	transform: scale(1.05);
+}
+
+.rowArticle{
+	transition: width .5s;
+	display: flex;
+	width: 100%;
+}
+
+.card{
+	transition: transform .5s;
+}
+
+.card:hover{
+	z-index: 1;
+	transform: scale(1.05);
+}
+
+.colText{
+	width: 50%;
+	padding: 0px;
+}
+
+.colImg{
+	width: 50%;
+	padding: 0px;
+	position: relative;
+}
+
+.colImg:hover .tooltip {
+	opacity: .9; /* Trasparenza al passaggio del mouse */
+}
+
+.colVideo{
+	width: 50%;
+}
+
+.text-live, .text-song{
+	padding: 10%;
+}
+
+/*Padding diverso per dimensionare diversamente la descrizione del brano*/
+.catene {
+	padding: 40px;
+}
+
+/*IMMAGINE DI SFONDO*/
+.wallp{
+	background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: rgba(255,255,255,0.6); 
+    background-blend-mode: lighten;
+}
+
+/*SPAZIO TRA I DIV DELLA PAGINA*/
+.ph {
+    font-family: Verdana, sans-serif;
+    font-size: 8px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.ph span {
+    float: left;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    color: #dedede;
+    background: #222; /* browser che non supportano rgba */
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.rowDiv {
+	display: flex;
+}
+
+iframe{
+	width: 100%;
+    height: 500px;
+    border: 0px;
+}
+
+/*ARTICOLI DICONO DI NOI*/
+#articolo1 {
+	width: inherit;
+}
+
+#articolo2 {
+	width: inherit;
+}
+
+#articolo3 {
+	width: inherit;
+}
+
+/*RELATIVO AL MENU*/
+#canzoni {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+#concertihome {
+	padding-right: 5%;
+}
+
+/*SIMULAZIONE BOTTONI HOVER SHOP*/
+a.btn.btn-primary{
+	background-color: #ffff00;
+	border-color: white;
+	border-radius: 8px;
+	font-family: 'Roboto Mono', monospace;
+	color: black;
+}
+
+/*SHOP HOMEPAGE*/
+.products .box-container{
+	flex-wrap: wrap;
+	gap: 1.5rem;
+}
+
+/*FORMATTAZIONE DEI BORDI DELLA SCHEDA "SHOP"*/
+.products .box-container .box{
+	flex: 1 1 30rem;
+	box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+	border-radius: .5rem;
+	border: .1rem solid rgba(0,0,0,.1);
+	position: relative;
+}
+
+/*FORMATTAZIONE DELLA SCHEDA RELATIVA ALLO SCONTO"*/
+.products .box-container .box .discount{
+	position: relative;
+	top:1rem; left:1rem;
+	padding:.7rem 1rem;
+	font-size: 1.5rem;
+	color:var(--black);
+	background: #ddd;
+	z-index: 1;
+	border-radius: .5rem;
+	font-weight: bolder; /*altrimenti il peso del carattere si perde nella larghezza della scheda*/
+}
+
+/*FORMATTAZIONE DELL'IMMAGINE DEL PRODOTTO*/
+.products .box-container .box .image{
+	position: relative;
+	text-align: center;
+	padding-top: 1rem;
+	overflow: hidden;
+	border-radius: 1rem;
+}
+
+/*FORMATTAZIONE CHE PERMETTE DI ZOOMARE L'IMMAGINE DEL PRODOTTO QUANDO INDICATA*/
+.products .box-container .box:hover .image img{
+	transform: scale(1.1);
+}
+
+/*FORMATTAZINE DELLA CLASSE IN SOVRIMPRESSIONE*/
+.products .box-container .box .image .icons{
+	position: absolute;
+	bottom:-7rem; left:0; right:0;
+	display: flex;
+	transition-property: bottom;
+	transition-duration: 0.7s;
+}
+
+/*FORMATTAZIONE DEL POSIZIONAMENTO DELLA CLASSE IN SOVRIMPRESSIONE*/
+.products .box-container .box:hover .image .icons{
+	bottom: 0;
+}
+
+/*FORMATTAZIONE DI CIO' CHE E' DENTRO LA CLASSE IN SOVRIMPRESSIONE*/
+.products .box-container .box .image .icons a{
+	height: 3rem;
+	line-height: 3rem;
+	font-size: 1.5rem;
+	width: 50%;
+	background: #ffff00;
+	color: black;
+	text-decoration: none;
+}
+
+/*FORMATTAZIONE DEI BORDI DELLA CLASSE IN SOVRIMPRESSIONE*/
+.products .box-container .box .image .icons .cart-btn{
+	border-left: .1rem solid #fff7;
+	border-right: .1rem solid #fff7;
+	width: 100%;
+	font-weight: bolder;
+}
+
+/*FORMATTAZIONE DEL BACKGROUND GRIGIO NELL'HOVER*/
+.products .box-container .box .image .icons a:hover{
+	background: #333;
+	color: white;
+}
+
+/*FORMATTAZIONE DEL BOX-PREZZO*/
+.products .box-container .box .content{
+	padding: 1rem;
+	text-align: center;
+}
+
+/*FORMATTAZIONE DELL'ETICHETTA-NOME DEL PRODOTTO*/
+.products .box-container .box .content h4{
+	font-size: 2rem;
+	color: #333;
+}
+
+/*FORMATTAZIONE DEL PREZZO*/
+.products .box-container .box .content .price{
+	font-size: 2rem;
+	color:var(--blak);
+	font-weight: bolder;
+	padding-top: 0.5rem; 
+}
+
+/*FORMATTAZIONE DEL PREZZO SCONTATO*/
+.products .box-container .box .content .price span{
+	font-size: 1.5rem;
+	color: #999;
+	font-weight: lighter;
+	text-decoration: line-through; 
+}
+
+/* FOOTER SOCIAL MEDIA*/
+footer {
+	background-color: black ;
+	padding: 20px 0px;
+	text-align: center;
+	display: flex;
+}
+
+.fa-brands {
+	font-size: 2em;
+	color: white;
+	display: inline-flex !important; /*Importa in quanto andiamo a modificare una riga di codice "style" preimpostato*/
+	margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.fa-brands:hover {
+	text-decoration: none;
+	color: #ffff00;
+}
+
+/*FORMATTAZIONE ABSTRACT*/
+.f-abstract{
+	color: #ffff00;
+	opacity: 0.5;
+	font-family: 'Roboto', sans-serif;
+	margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2%;
+}
+
+/*FORMATTAZIONE PAGINA DOCUMENTAZIONE*/
+.p-footer, .footer{
+	color: white;
+	opacity: 0.5;	
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+.footer:hover{
+	color: #ffff00;
+	opacity: 1;
+	text-decoration: none;
+}
+
+/*PAGINA BAND*/
+.h-menu{
+	background-color: black;
+	padding: 70px 100px;
+	border-style: solid;
+    border-bottom: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu-all{
+	position: absolute;
+	margin: auto;
+	width: 562px;
+	height: 50px;
+	border-radius: 8px;
+	box-shadow: 0 2px 3px rgba(0,0,0,.1);
+	border: 1px solid;
+	border-color: white;
+}
+
+.whitelink-b{
+	color: white;
+}
+
+.whitelink-b:hover {
+	text-decoration: none; 
+	color: #ffff00;
+}
+
+.menu-all .animation{
+	position: absolute;
+	height: 10%;
+	bottom: 10;
+	z-index: 0;
+	background-color: white;
+	border-radius: 5px;
+	transition: all .5s ease 0s;
+}
+
+.l-home{
+	position: absolute;
+	top: 20px;
+	left: 50px;
+	margin: 0px;
+	padding: 0px;
+	z-index: 2;
+	height: 90px;
+	width: 90px;
+	display: flex;
+}
+
+#carouselContr{
+	max-height: 750px;
+}
+
+.cropper img{
+	margin: -100px 0 -100px 0;
+	max-width: 100%;
+	height: auto;
+}
+
+.carousel-inner{
+	max-height: 750px !important;
+}
+
+.carousel-item{
+	max-height: 750px !important;
+}
+
+.linkph{
+	color:white;
+}
+
+.linkph:hover{
+	color: #ffff00;
+	text-decoration: none;
+}
+
+.shortcut{
+	color: black;
+}
+
+.shortcut:hover{
+	color: #ffff00;;
+	text-decoration: none;
+}
+
+.phcarosello {
+	color: white;		
+	background: #222; /* browser che non supportano rgba */
+	background: rgba(0,0,0,0.7);
+	font-size: 10px;
+	padding: 8px;
+}
+
+.phcarosello:hover{
+	color: #ffff00;
+	text-decoration: none;
+}
+
+.phalberto {
+	float: right;
+}
+
+.d-block{
+	max-height: 750px !important;
+}
+
+#descrizione-b{
+	max-width: 85%;
+	margin: 50px 15%;
+	text-align: justify;
+}
+
+#componenteA {
+	width: 100%;
+}
+
+#componenteA {
+	transition: transform .5s;
+}
+
+#componenteA:hover{
+	transform: scale(1.05);}
+
+#nome-l {
+	text-align: left;
+}
+
+#dataA {
+	text-align: left;
+}
+
+#bioA {
+	text-align: left;
+	text-align: justify;
+	max-width: 60%;
+}
+
+.A {
+	margin-top: 3%;
+}
+
+#componenteS {
+	width: 100%;
+	max-height: auto;
+	margin-right: 10px;
+}
+
+#componenteS {
+	transition: transform .5s;
+}
+
+#componenteS:hover{
+	transform: scale(1.05);}
+
+#nome-r {
+	text-align: right;
+}
+
+#dataS {
+	text-align: right;
+}
+
+#bioS {
+	text-align: right;
+	text-align: justify;
+	max-width: 60%;
+	margin-left: 40%;
+}
+
+.S {
+	margin-top: -5%;
+}
+
+#componenteG {
+	width: 100%;
+	max-height: auto; 
+}
+
+#componenteG {
+	transition: transform .5s;
+}
+
+#componenteG:hover{
+	transform: scale(1.05);
+}
+
+#nomeG{
+	text-align: left;
+}
+
+#dataG{
+	text-align: left;
+}
+
+#bioG{
+	text-align: left;
+	text-align: justify;
+	max-width: 60%;
+}
+.G{
+	margin-top: -5%;
+}
+
+/*PAGINA CONCERTI*/ 
+.descrizione {
+	position: relative;
+}
+
+.tooltip { /* Stile del testo*/
+	width: 350px; /* Larghezza tooltip */
+	font-size:15px; /* Dimensione font */
+	bottom: 5%;
+	left: 2%; /* Posizionamento inizio del tooltip*/
+	opacity: 0;
+	padding: 6px;
+	color: black; /* Colore testo tooltip */
+	background: #ffff00; /* Sfondo tooltip */
+	transition:all ease .5s;/* Durata Transizione*/
+}
+
+.descrizione:hover .tooltip {
+	opacity: .9; /* Trasparenza al passaggio del mouse */
+}
+
+#concerto1 {
+	max-width: 100%;
+	padding-right: 5px;
+	transition: filter 0.5s;
+}
+
+#concerto1:hover {
+	filter: blur(2px);
+}
+
+#concerto2 {
+	max-width: 100%;
+	padding-left: 5px;
+	transition: filter 0.5s;
+}
+
+#concerto2:hover {
+	filter: blur(3px);
+}
+
+#concerto3 {
+	max-width: 100%;
+	transition: filter 0.5s;
+}
+
+#concerto3:hover {
+	filter: blur(3px);
+}
+
+.col-6 {
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+}
+
+.rowDate{
+	width: 100%;
+	display: flex;
+}
+
+.card-title2{
+	text-align: center; 
+	color: white;
+}
+
+.card-text2{
+	text-align: center;
+	color: white;
+}
+
+.new-date-2 {
+	height: 100%;
+}
+
+.card-img{
+	height: 400px;
+}
+
+/*PAGINA SHOP*/
+
+#name-shop{
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	color: black;
+}
+
+.products-shop .boxcont-shop{
+	display: flex;
+	flex-wrap: wrap;
+	gap:1.5rem;
+}
+
+/*FORMATTAZIONE CORNICE PRODOTTO*/
+.products-shop .boxcont-shop .box-shop{
+	flex:1 1 30rem;
+	box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+	border-radius: .5rem;
+	border:.1rem;
+	position: relative;
+}
+
+/*FORMATTAZIONE DELLA SCHEDA RELATIVA ALLO SCONTO"*/
+.products-shop .boxcont-shop .box-shop .discount-shop{
+	position: absolute;
+	top:1rem; left:1rem;
+	padding:.7rem 1rem;
+	font-size: 1.5rem;
+	color:var(--black);
+	background: #ddd;
+	z-index: 1;
+	border-radius: .5rem;
+}
+
+.products-shop .boxcont-shop .box-shop .img-shop{
+	position: relative;
+	text-align: center;
+	padding-top: 2rem;
+	overflow: hidden;
+	border-radius: 1rem;
+}
+
+.products-shop .boxcont-shop .box-shop .img-shop img{
+	height: 15rem;
+}
+
+.products-shop .boxcont-shop .box-shop:hover .img-shop img{
+	transform: scale(1.1);
+}
+
+.products-shop .boxcont-shop .box-shop .img-shop .icons-shop{
+	position: absolute;
+	bottom: -7rem; left: 0; right: 0;
+	display: flex;
+	transition-property: bottom;
+	transition-duration: 0.7s;
+}
+
+.products-shop .boxcont-shop .box-shop:hover .img-shop .icons-shop{
+	bottom:0;
+}
+
+.products-shop .boxcont-shop .box-shop .img-shop .icons-shop a{
+	height: 3rem;
+	line-height: 3rem;
+	font-size: 1.5rem;
+	width: 50%;
+	background: #ffff00;
+	color: black;
+	text-decoration: none;
+}
+
+/*FORMATTAZIONE DEI BORDI DELLA CLASSE IN SOVRIMPRESSIONE*/
+.products-shop .boxcont-shop .box-shop .img-shop .icons-shop .cartbtn-shop{
+	border-left: .1rem solid #fff7;
+	border-right: .1rem solid #fff7;
+	width: 100%;
+}
+
+/*FORMATTAZIONE DEL BACKGROUND GRIGIO NELL'HOVER*/
+.products-shop .boxcont-shop .box-shop .img-shop .icons-shop a:hover{
+	background: #333;
+	color: white;
+}
+
+/*FORMATTAZIONE DEL BOX-PREZZO*/
+.products-shop .boxcont-shop .box-shop .content-shop{
+	padding: 1rem;
+	text-align: center;
+}
+
+/*FORMATTAZIONE DELL'ETICHETTA-NOME DEL PRODOTTO*/
+.products-shop .boxcont-shop .box-shop .content-shop h4{
+	font-size: 2rem;
+	color: #333;
+}
+
+/*FORMATTAZIONE DEL PREZZO*/
+.products-shop .boxcont-shop .box-shop .content-shop .price-shop{
+	font-size: 2rem;
+	color:var(--blak);
+	font-weight: bolder;
+	padding-top: 0.5rem; 
+}
+
+/*FORMATTAZIONE DEL PREZZO SCONTATO*/
+.products-shop .boxcont-shop .box-shop .content-shop .price-shop span{
+	font-size: 1.5rem;
+	color: #999;
+	font-weight: lighter;
+	text-decoration: line-through; 
+}
+
+.heading-shop{
+		font-family: 'Koulen', cursive;
+}
