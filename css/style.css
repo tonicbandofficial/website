@@ -66,7 +66,6 @@ nav a{
 	color: #fff;
 	font-family: "Roboto", sans-serif;
 	z-index: 2;
-	margin-bottom: .1%;
 }
 
 .showcase header{
@@ -624,11 +623,8 @@ footer {
 }
 
 #componenteA {
-	width: 100%;
+	width: 100%;	
 	border-radius: 1rem;
-}
-
-#componenteA {
 	transition: transform .5s;
 }
 
@@ -656,17 +652,13 @@ footer {
 #componenteS {
 	width: 100%;
 	max-height: auto;
+	margin-right: 10px;
 	border-radius: 1rem;
 	transition: transform .5s;
 }
 
 #componenteS:hover{
-	transform: scale(1.05);
-}
-
-.ph-s{
-	margin-right: 15px;
-}
+	transform: scale(1.05);}
 
 #nome-r {
 	text-align: right;
@@ -689,11 +681,8 @@ footer {
 
 #componenteG {
 	width: 100%;
-	max-height: auto; 
+	max-height: auto; 	
 	border-radius: 1rem;
-}
-
-#componenteG {
 	transition: transform .5s;
 }
 
@@ -714,13 +703,8 @@ footer {
 	text-align: justify;
 	max-width: 60%;
 }
-
 .G{
 	margin-top: -5%;
-}
-
-.row{
-	margin-right: 0px !important;
 }
 
 /*PAGINA CONCERTI*/ 
@@ -776,13 +760,9 @@ footer {
 	filter: blur(3px);
 }
 
-.col-6{
+.col-6 {
 	padding-right: 0px !important;
 	padding-left: 0px !important;
-}
-
-.col-3{
-	padding-right: 0px !important;
 }
 
 .rowDate{
@@ -924,42 +904,4 @@ footer {
 
 .heading-shop{
 		font-family: 'Koulen', cursive;
-}
-
-/*DOCUMENTAZIONE*/
-.titledoc {
-	font-family: 'Roboto', sans-serif;
-	text-align: center; 
-	padding: 5% 0px 2% 0px;
-}
-
-.subtitledoc {
-	font-family: 'Roboto', sans-serif;
-	text-align: center;
-	padding: 2% 0px 1% 0px;
-}
-
-.subsubtitledoc {
-	text-decoration: underline;
-	padding-top: 1%;
-}
-
-.pdoc {
-	font-family: 'Playfair Display', serif;
-	text-align: center;
-	padding: 0px 7% 0px 7%; 
-}
-
-
-.par5doc {
-	padding-bottom: 5%;
-}
-
-.imgarc {
-	max-width: 80%;
-	margin: 0px 10%;
-}
-
-.imgwire {
-	max-width: 100%;
 }
