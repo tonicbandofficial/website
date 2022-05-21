@@ -66,6 +66,7 @@ nav a{
 	color: #fff;
 	font-family: "Roboto", sans-serif;
 	z-index: 2;
+	margin-bottom: .1%;
 }
 
 .showcase header{
@@ -219,6 +220,7 @@ nav .home-shop, a:nth-child(4):hover~.animation{
 	max-width: 100%;
 	padding-right: 5px;
 	transition: filter 0.5s;
+	border-radius: 1rem;
 }
 
 #concerti:hover {
@@ -227,6 +229,7 @@ nav .home-shop, a:nth-child(4):hover~.animation{
 
 #song{
 	transition: transform .5s;
+	border-radius: 1rem;
 }
 
 #song:hover{
@@ -278,7 +281,7 @@ nav .home-shop, a:nth-child(4):hover~.animation{
 
 /*IMMAGINE DI SFONDO*/
 .wallp{
-	background-image: url(../img/logo.PNG);
+	background-image: url(../img/logo.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -312,7 +315,6 @@ nav .home-shop, a:nth-child(4):hover~.animation{
 
 .rowDiv {
 	display: flex;
-	padding-top: 2%;
 }
 
 iframe{
@@ -623,7 +625,7 @@ footer {
 
 #componenteA {
 	width: 100%;
-	max-height: auto;
+	border-radius: 1rem;
 }
 
 #componenteA {
@@ -654,14 +656,17 @@ footer {
 #componenteS {
 	width: 100%;
 	max-height: auto;
-}
-
-#componenteS {
+	border-radius: 1rem;
 	transition: transform .5s;
 }
 
 #componenteS:hover{
-	transform: scale(1.05);}
+	transform: scale(1.05);
+}
+
+.ph-s{
+	margin-right: 15px;
+}
 
 #nome-r {
 	text-align: right;
@@ -679,12 +684,13 @@ footer {
 }
 
 .S {
-	margin-top: -2%;
+	margin-top: -5%;
 }
 
 #componenteG {
 	width: 100%;
 	max-height: auto; 
+	border-radius: 1rem;
 }
 
 #componenteG {
@@ -708,8 +714,13 @@ footer {
 	text-align: justify;
 	max-width: 60%;
 }
+
 .G{
-	margin-top: -2%;
+	margin-top: -5%;
+}
+
+.row{
+	margin-right: 0px !important;
 }
 
 /*PAGINA CONCERTI*/ 
@@ -737,6 +748,7 @@ footer {
 	max-width: 100%;
 	padding-right: 5px;
 	transition: filter 0.5s;
+	border-radius: 1rem;
 }
 
 #concerto1:hover {
@@ -747,6 +759,7 @@ footer {
 	max-width: 100%;
 	padding-left: 5px;
 	transition: filter 0.5s;
+	border-radius: 1rem;
 }
 
 #concerto2:hover {
@@ -756,15 +769,20 @@ footer {
 #concerto3 {
 	max-width: 100%;
 	transition: filter 0.5s;
+	border-radius: 1rem;
 }
 
 #concerto3:hover {
 	filter: blur(3px);
 }
 
-.col-6 {
+.col-6{
 	padding-right: 0px !important;
 	padding-left: 0px !important;
+}
+
+.col-3{
+	padding-right: 0px !important;
 }
 
 .rowDate{
@@ -906,4 +924,42 @@ footer {
 
 .heading-shop{
 		font-family: 'Koulen', cursive;
+}
+
+/*DOCUMENTAZIONE*/
+.titledoc {
+	font-family: 'Roboto', sans-serif;
+	text-align: center; 
+	padding: 5% 0px 2% 0px;
+}
+
+.subtitledoc {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	padding: 2% 0px 1% 0px;
+}
+
+.subsubtitledoc {
+	text-decoration: underline;
+	padding-top: 1%;
+}
+
+.pdoc {
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	padding: 0px 7% 0px 7%; 
+}
+
+
+.par5doc {
+	padding-bottom: 5%;
+}
+
+.imgarc {
+	max-width: 80%;
+	margin: 0px 10%;
+}
+
+.imgwire {
+	max-width: 100%;
 }
