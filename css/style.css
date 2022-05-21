@@ -312,6 +312,7 @@ nav .home-shop, a:nth-child(4):hover~.animation{
 
 .rowDiv {
 	display: flex;
+	padding-top: 2%;
 }
 
 iframe{
@@ -622,6 +623,7 @@ footer {
 
 #componenteA {
 	width: 100%;
+	max-height: auto;
 }
 
 #componenteA {
@@ -652,7 +654,6 @@ footer {
 #componenteS {
 	width: 100%;
 	max-height: auto;
-	margin-right: 10px;
 }
 
 #componenteS {
@@ -678,7 +679,7 @@ footer {
 }
 
 .S {
-	margin-top: -5%;
+	margin-top: -2%;
 }
 
 #componenteG {
@@ -708,7 +709,7 @@ footer {
 	max-width: 60%;
 }
 .G{
-	margin-top: -5%;
+	margin-top: -2%;
 }
 
 /*PAGINA CONCERTI*/ 
