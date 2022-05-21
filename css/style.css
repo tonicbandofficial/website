@@ -88,6 +88,16 @@ nav a{
 	object-fit: cover;
 }
 
+#btn-info{
+	z-index: 1;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border-style: none;
+    font-size: 12px;
+    opacity: 0.5;
+}
+
 .whitelink{
 	color: white;
 }
@@ -317,7 +327,7 @@ nav .home-shop, a:nth-child(4):hover~.animation{
 }
 
 #row-concerti{
-	margin-top: 3%;
+	margin-top: 2%;
 }
 
 iframe{
