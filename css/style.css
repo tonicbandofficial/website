@@ -110,7 +110,7 @@ nav a{
 nav .animation{
 	position: absolute;
 	height: 10%;
-	bottom: 10;
+	bottom: -12%; /*impostare un valore unitario oltre allo 0 è errore*/
 	z-index: 0;
 	background-color: black;
 	border-radius: 5px;
@@ -196,7 +196,7 @@ nav .home-shop, a:nth-child(4):hover~.animation{
 	animation-name: titlechange;
 	animation-duration: 8s;
 	animation-iteration-count: infinite;
-	animation-timinig-function: ease;
+	animation-timing-function: ease;
 }
 
 @keyframes titlechange{
@@ -265,10 +265,11 @@ nav .home-shop, a:nth-child(4):hover~.animation{
 	padding: 0px;
 }
 
-.colImg{
+.colImg{	
+	position: relative;
 	width: 50%;
 	padding: 0px;
-	position: relative;
+
 }
 
 .colImg:hover .tooltip {
@@ -277,6 +278,7 @@ nav .home-shop, a:nth-child(4):hover~.animation{
 
 .colVideo{
 	width: 50%;
+	border-radius: 1rem;
 }
 
 .text-live, .text-song{
@@ -554,7 +556,7 @@ footer {
 .menu-all .animation{
 	position: absolute;
 	height: 10%;
-	bottom: 10;
+	bottom: -12%;
 	z-index: 0;
 	background-color: white;
 	border-radius: 5px;
@@ -666,7 +668,6 @@ footer {
 
 #componenteS {
 	width: 100%;
-	max-height: auto;
 	margin-right: 10px;
 	border-radius: 1rem;
 	transition: transform .5s;
@@ -696,7 +697,6 @@ footer {
 
 #componenteG {
 	width: 100%;
-	max-height: auto; 	
 	border-radius: 1rem;
 	transition: transform .5s;
 }
@@ -801,6 +801,10 @@ footer {
 
 .card-img{
 	height: 400px;
+}
+
+.d-grid{
+	text-align: center;
 }
 
 /*PAGINA SHOP*/
