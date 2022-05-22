@@ -934,6 +934,11 @@ footer {
 
 }
 
-.imgarc, .imgwire{
-	
+.imgarc {
+	max-width: 90%;
+	margin: 0px 5%;
+}
+
+.imgwire {
+	max-width: 100%;
 }
