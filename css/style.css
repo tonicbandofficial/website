@@ -236,12 +236,12 @@ nav .home-shop, a:nth-child(4):hover~.animation{
 	filter: blur(2px);
 }
 
-#song{
+.song{
 	transition: transform .5s;
 	border-radius: 1rem;
 }
 
-#song:hover{
+.song:hover{
 	transform: scale(1.05);
 }
 
@@ -646,7 +646,7 @@ footer {
 	transform: scale(1.05);
 }
 
-#nome-l {
+.nome-l {
 	text-align: left;
 }
 
