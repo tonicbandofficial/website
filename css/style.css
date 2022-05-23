@@ -935,7 +935,9 @@ footer {
 }
 
 .pdoc{
-
+	width: 90%;
+	margin-right: 5%;
+	margin-left: 5%;
 }
 
 .imgarc {
