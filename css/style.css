@@ -524,6 +524,17 @@ footer {
 	text-decoration: none;
 }
 
+.footer-doc{
+	color: #ffff00;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+.footer-doc:hover{
+	color: #ffff00;
+	text-decoration: none;
+}
+
 /*PAGINA BAND*/
 .h-menu{
 	background-color: black;
@@ -549,6 +560,15 @@ footer {
 }
 
 .whitelink-b:hover {
+	text-decoration: none; 
+	color: #ffff00;
+}
+
+.whitelink-indicator{
+	color: #ffff00;
+}
+
+.whitelink-indicator:hover {
 	text-decoration: none; 
 	color: #ffff00;
 }
@@ -947,4 +967,9 @@ footer {
 
 .imgwire {
 	max-width: 100%;
+}
+
+#a-band{
+	border-bottom: 1px;
+	border-color: white;
 }
