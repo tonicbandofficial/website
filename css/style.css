@@ -145,7 +145,7 @@ nav .home-concerti, a:nth-child(3):hover~.animation{
 }
 
 a:nth-child(4){
-	width: 140px;
+	width: 139px;
 }
 
 nav .home-shop, a:nth-child(4):hover~.animation{
@@ -238,7 +238,6 @@ nav .home-shop, a:nth-child(4):hover~.animation{
 
 .song{
 	transition: transform .5s;
-	border-radius: 1rem;
 }
 
 .song:hover{
@@ -351,16 +350,6 @@ iframe{
 	width: inherit;
 }
 
-/*RELATIVO AL MENU*/
-#canzoni {
-	padding-left: 5%;
-	padding-right: 5%;
-}
-
-#concertihome {
-	padding-right: 5%;
-}
-
 /*SIMULAZIONE BOTTONI HOVER SHOP*/
 a.btn.btn-primary{
 	background-color: #ffff00;
@@ -466,7 +455,7 @@ a.btn.btn-primary{
 /*FORMATTAZIONE DEL PREZZO*/
 .products .box-container .box .content .price{
 	font-size: 2rem;
-	color:var(--blak);
+	color:var(--black);
 	font-weight: bolder;
 	padding-top: 0.5rem; 
 }
@@ -540,8 +529,8 @@ footer {
 	background-color: black;
 	padding: 70px 100px;
 	border-style: solid;
-    border-bottom: none;
-    font-family: 'Roboto', sans-serif;
+	border-bottom: none;
+	font-family: 'Roboto', sans-serif;
 }
 
 .menu-all{
